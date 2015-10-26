@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+   "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+   "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+   <constant name="struts.devMode" value="true" />
+   <package name="fishingapp" namespace="/" extends="struts-default">
+     
+      <action name="hello" 
+            class="org.fishingapp.actions.Welcome" 
+            method="execute" >
+            <result name="success">/fishsView.jsp</result>
+            <result name="error">/fishsView.jsp</result>
+      </action>
+      <action name="AddFish" 
+            class="org.fishingapp.actions.AddFish" 
+            method="execute" >
+            <result name="success" type="redirectAction">loadFishAdmin</result>
+            <result name="error">/fishsView.jsp</result>
+      </action>
+      <action name="UpdateFish" 
+            class="org.fishingapp.actions.UpdateFish" 
+            method="execute" >
+            <result name="success" type="redirectAction">loadFishAdmin</result>
+            <result name="error">/fishsView.jsp</result>
+      </action>
+      <action name="loadFishAdmin" 
+            class="org.fishingapp.actions.LoadFishAdmin" 
+            method="execute" >
+            <result name="success">FishAdmin.jsp</result>
+      </action>
+
+   </package>
+
+</struts>
