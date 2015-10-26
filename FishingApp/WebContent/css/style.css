@@ -23,6 +23,7 @@ img {
 	background:url(../images/logo.png) no-repeat;
 	display:block;
 }
+
 #connect ul li a, #content #main div div input.submit {
 	background:url(../images/icons.png) no-repeat;
 }
