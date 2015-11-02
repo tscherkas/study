@@ -4,7 +4,7 @@
    "http://struts.apache.org/dtds/struts-2.0.dtd">
 <struts>
    <constant name="struts.devMode" value="true" />
-   <package name="fishingapp" namespace="/" extends="struts-default">
+   <package name="kurs" namespace="/" extends="struts-default">
      
       <action name="hello" 
             class="org.fishingapp.actions.Welcome" 

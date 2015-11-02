@@ -7,8 +7,7 @@
 <head>
 <title>About - Fishing Website Template</title>
 <sitemesh:write property='head' />
-<link rel="stylesheet" href="/kurs/css/style.css"
-	type="text/css">
+<link rel="stylesheet" href="/kurs/css/style.css" type="text/css">
 </head>
 <body>
 	<div id="page">
@@ -28,22 +27,18 @@
 					<p>Shopping Cart: 0 item</p>
 					<p>$ 0.00</p>
 				</div>
-				<ul id="navigation">
-					<li><s:a action="hello">Home</s:a></li>
-					<li>
-						<s:url var="FishAdminUrl" namespace="/"
-							action="loadFishAdmin">
-						</s:url>
-						<s:a href="%{FishAdminUrl}">Fish-admin</s:a></li>
-					<li><a href="products.html">Products</a></li>
-					<li><a href="cards.html">Gift Card</a></li>
-					<li><a href="clearance.html">Clearance</a></li>
-				</ul>
 			</div>
+			<ul id="navigation">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="featured.html">Featured Products</a></li>
+				<li><a href="products.html">Products</a></li>
+				<li><a href="cards.html">Gift Card</a></li>
+				<li><a href="clearance.html">Clearance</a></li>
+			</ul>
 		</div>
-		<div id="contents">
-			<sitemesh:write property='body' />
-		</div>
+
+		<sitemesh:write property='body' />
+
 		<div id="footer">
 			<div id="footnote">
 				<a href="index.html" class="logo"></a> <span>&#169; Copyright
@@ -84,3 +79,4 @@
 	</div>
 </body>
 </html>
+
