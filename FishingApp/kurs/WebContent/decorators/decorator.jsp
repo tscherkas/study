@@ -7,7 +7,7 @@
 <head>
 <title>About - Fishing Website Template</title>
 <sitemesh:write property='head' />
-<link rel="stylesheet" href="/FishingApplication/css/style.css"
+<link rel="stylesheet" href="/kurs/css/style.css"
 	type="text/css">
 </head>
 <body>
@@ -16,7 +16,7 @@
 			<ul id="login">
 				<li class="first"><a href="register.html">Register</a><span>/</span>
 				</li>
-				<li><a href="accounts.html">My Account (Аккаўнты)</a></li>
+				<li><a href="accounts.html">My Account (Акаўнты)</a></li>
 			</ul>
 			<ul id="service">
 				<li class="first"><a href="help.html">Help</a><span>/</span></li>
