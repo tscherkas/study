@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="acbabed2-9e54-494e-bb8c-96efce6bf260" ChangeDateTime="02/16/2016 18:29:21">
+    <Property Name="ElementName" Value="[dbo].[Jobs].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Jobs]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Job_id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="76742a24-3a26-45d0-84f1-dc4abe29eb95" ChangeDateTime="02/16/2016 18:30:49">
+    <Property Name="ElementName" Value="[dbo].[Table1Employees].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Table1Employees]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Emp_id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="bbe59b0f-10e4-460c-afb3-8fc8c8fd215f" ChangeDateTime="02/16/2016 18:31:32">
+    <Property Name="ElementName" Value="[dbo].[FK_Table1Employees_ToTable]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[Table1Employees]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[Job_id]" />
+  </Operation>
+</Operations>
